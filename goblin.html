@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creatures Throughout Mythology</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        function Image() {
+            const image = document.getElementById("creatureImage");
+            const select = document.getElementById("goblinType");
+            const selectedOption = select.value;
+            if (selectedOption === "scottish") {
+                image.src = "sottish.jpg";
+                image.alt = "Scottish Goblin";
+            } else if (selectedOption === "korean") {
+                image.src = "korean.png";
+                image.alt = "Korean Goblin";
+            } else if (selectedOption === "irish") {
+                image.src = "irish.jpg";
+                image.alt = "Irish Goblin";
+            }
+            else if (selectedOption === "spanish") {
+                image.src = "spanish.jpg";
+                image.alt = "Spanish Goblin";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 id = "green">Goblins</h1>
+    </header>
+    <main>
+        <p>Goblins are found in a wide variety of cultures and this  page will delve into a few examples of those found throughout the world.</p>
+        
+        <label for="goblinType">Choose Type of Goblin:</label>
+        <select id="goblinType" onchange="Image()">
+            <option value="irish">Irish Goblin</option>
+            <option value="scottish">Scottish Goblin</option>
+            <option value="spanish">Spanish Goblin</option>
+            <option value="korean">Korean Goblin</option>
+        </select>
+        
+        <div class="image-container">
+            <img id="creatureImage" class="resize-image" src="irish.jpg" alt="Classic Goblin" />
+        </div>
+        <table class= "goblin-table">
+            <thead>
+                <tr>
+                    <th>Type of Goblin</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Irish Goblin: Phooka</td>
+                    <td>
+                        <ol>
+                            <li>They could either help or hinder rural and marine communities depending if they were worshipped.</li>
+                            <li>They are described as, "wicked-minded, black-looking, bad things ... that would come in the form of wild colts, with chains hanging about them."</li>
+                            <li>Known for causing trouble and playing evil pranks on humans.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Scottish Goblin: Brownie</td>
+                    <td>
+                        <ol>
+                            <li>Also known as a hobgoblin</li>
+                            <li>Said to come out at night and do the chores if left a bowl of milk.</li>
+                            <li>Usually peaceful, however can be angered if treated improperly and will become mischievous.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Spanish Goblin: Anjanas</td>
+                    <td>
+                        <ol>
+                            <li>Duende located in the Cantabria region.</li>
+                            <li>Supposed to be slender and beautiful.</li>
+                            <li>While in the Dunede/goblin family, they are small in size and seem to be more akin to fairies.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Korean Goblin: Dokkaebi</td>
+                    <td>
+                        <ol>
+                            <li>Portrayed very ugle with red faces.</li>
+                            <li>Made from inanimate objects that have been stained with blood.</li>
+                            <li>Many korean rituals use their powers to do things such as promise a good harvest.</li>
+                        </ol>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container">
+            <div class="box-fourth"><a href="index.html">Home</a></div>
+            <div class="box-fourth"><a href="goblin.html">Goblin</a></div>
+            <div class="box-fourth"><a href="mothman.html">Mothman</a></div>
+            <div class="box-fourth"><a href="bigfoot.html">Bigfoot</a></div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creatures Throughout Mythology</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        function Image() {
+            const image = document.getElementById("creatureImage");
+            const select = document.getElementById("crypType");
+            const selectedOption = select.value;
+            if (selectedOption === "bigfoot") {
+                image.src = "mainbig.jpg";
+                image.alt = "Bigfoot";
+            } else if (selectedOption === "goblin") {
+                image.src = "maingoblin.png";
+                image.alt = "Goblin";
+            } else if (selectedOption === "moth") {
+                image.src = "mainmoth.jpg";
+                image.alt = "Mothman";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 id ="blue">Creatures Throughout Mythology</h1>
+    </header>
+    <main>
+        <p>There are numerous creatures and ghouls throughout mythology! This website will cover a select few of my favorites and delve into their different types!</p>
+        
+        <label for="crypType">See a Creature!</label>
+        <select id="crypType" onchange="Image()">
+            <option value="goblin">Goblin</option>
+            <option value="moth">Mothman</option>
+            <option value="bigfoot">Bigfoot</option>
+        </select>
+        
+        <div class="image-container">
+            <img id="creatureImage" class="resize-image" src="maingoblin.png" alt="Classic Goblin" />
+        </div>
+        <table border="10" cellspacing="0" cellpadding="2">
+            <thead>
+                <tr>
+                    <th>Outline of Creatures Featured!</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The Goblin</td>
+                    <td>
+                        <ol>Usually depicted as small and green, goblin mythos has popped up all over the world.
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>The Mothman</td>
+                    <td>
+                        <ol>A mainly american mythos, he is said to be a moth sized man and who is not to be taken lightly.
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>The Bigfoot</td>
+                    <td>
+                        <ol>Also mainly american mythos, a towering human like apperance resembling an ape mixed with a man.
+                        </ol>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container">
+            <div class="box"><a href="index.html">Home</a></div>
+            <div class="box"><a href="goblin.html">Goblin</a></div>
+            <div class="box"><a href="mothman.html">Mothman</a></div>
+            <div class="box"><a href="bigfoot.html">Bigfoot</a></div>
+        </div>
+    </main>
+</body>
+</html>

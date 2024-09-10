@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creatures Throughout Mythology</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        function Image() {
+            const image = document.getElementById("creatureImage");
+            const select = document.getElementById("bigType");
+            const selectedOption = select.value;
+            if (selectedOption === "Bigfoot1") {
+                image.src = "bigfoot1.jpg";
+                image.alt = "Bigfoot1";
+            } else if (selectedOption === "Bigfoot2") {
+                image.src = "bigfoot2.jpg";
+                image.alt = "Bigfoot2";
+            } else if (selectedOption === "Bigfoot3") {
+                image.src = "bigfoot3.jpg";
+                image.alt = "Bigfoot3";
+            }
+            else if (selectedOption === "Bigfoot4") {
+                image.src = "bigfoot4.jpg";
+                image.alt = "Bigfoot4";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 id="brown">Bigfoot</h1>
+    </header>
+    <main>
+        <p>Bigfoot, who also goes by the name of Sasquatch, is part of the cryptid mythos along with Mothman. Though his whereabouts are unknown, he mainly resides in the forest in the Pacific Northwest region of America.</p>
+        
+        
+        <label for="bigType">Depictions of Bigfoot</label>
+        <select id="bigType" onchange="Image()">
+            <option value="Bigfoot1">Bigfoot 1</option>
+            <option value="Bigfoot2">Bigfoot 2</option>
+            <option value="Bigfoot3">Bigfoot 3</option>
+            <option value="Bigfoot4">Bigfoot 4</option>
+        </select>
+        
+        <div class="image-container">
+            <img id="creatureImage" class="resize-image" src="bigfoot1.jpg" alt="Bigfoot1" />
+        </div>
+        <table class="bigfoot-table">
+            <thead>
+                <tr>
+                    <th>Bigfoot</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Main Attributes</td>
+                    <td>
+                        <ol>
+                            <li>Large Feet.</li>
+                            <li>Hairy coat covering the whole body.</li>
+                            <li>Anywhere for 10 to 15 feet tall.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Notable Media Apperances</td>
+                    <td>
+                        <ol>
+                            <li>BuzzFeed Unsolved</li>
+                            <li>Grand Theft Auto V</li>
+                            <li>Jack Links Commercial</li>
+                        </ol>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container">
+            <div class="box-third"><a href="index.html">Home</a></div>
+            <div class="box-third"><a href="goblin.html">Goblin</a></div>
+            <div class="box-third"><a href="mothman.html">Mothman</a></div>
+            <div class="box-third"><a href="bigfoot.html">Bigfoot</a></div>
+        </div>
+    </main>
+</body>
+</html>
